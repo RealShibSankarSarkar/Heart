@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Proposal Garden</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="not-loaded">
+    <!-- ব্যাকগ্রাউন্ড মিউজিক (আপনার দেওয়া লিঙ্কে এখানে বসাবেন) -->
+    <audio id="bgMusic" loop>
+        <source src="YOUR_SONG_LINK_HERE.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="main-container" id="mainContainer">
+        
+        <!-- দৃশ্য ১: জাদুকরী বাগান -->
+        <section class="scene garden-scene">
+            <div class="night"></div>
+            <div class="flowers">
+                <!-- আপনার দেওয়া CSS ফ্লাওয়ার কোড এখানে ডাইনামিকালি থাকবে -->
+                <div class="flower flower--1"><div class="flower__line"></div></div>
+                <div class="flower flower--2"><div class="flower__line"></div></div>
+                <div class="flower flower--3"><div class="flower__line"></div></div>
+            </div>
+            <div class="intro-text">এক জাদুকরী রাতের গল্প শুরু...</div>
+        </section>
+
+        <!-- দৃশ্য ২: গাছ এবং চিঠি -->
+        <section class="scene tree-scene">
+            <div class="night"></div>
+            <div class="tree-container">
+                <svg class="tree-svg" viewBox="0 0 200 400">
+                    <path id="trunk" d="M100,400 Q110,300 100,200 T100,50" fill="none" stroke="#2E1B0E" stroke-width="0" />
+                    <!-- ডালপালা -->
+                    <path class="branch" d="M100,250 Q130,220 150,230" fill="none" stroke="#2E1B0E" stroke-width="0" />
+                    <path class="branch" d="M100,180 Q70,150 40,160" fill="none" stroke="#2E1B0E" stroke-width="0" />
+                </svg>
+                
+                <!-- উড়ে আসা পাতাগুলো এখানে জমা হবে -->
+                <div id="leaves-container"></div>
+
+                <!-- লতা এবং চিঠি -->
+                <div class="vine-letter" id="proposalLetter">
+                    <div class="vine"></div>
+                    <div class="letter-box">
+                        <p id="typed-text"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
